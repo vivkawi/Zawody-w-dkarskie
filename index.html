@@ -1,39 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-
+    <!DOCTYPE html>
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Zawody wędkarskie</title>
+    <link rel="stylesheet" href="sty13.css">
 </head>
-
 <body>
 
-    <div class="circle2"></div>
-    <div class="circle1"></div>
-    <form class="custom-block">
-        <div>
-            <input type="name" placeholder="user">
-        </div>
-        <div>
-            <input type="password" id="password" placeholder="password" /><br><br>
-        </div>
-        <div>
-            <button>login</button>
-        </div>
-        <label for="password">1111:</label>
-        <input type="password" id="password" />
-    </form>
-    <script>
-        function showPassword() {
-            const passwordField = document.getElementById('password');
+    <section class="gorna">
+        <section class="lewy">
+            <h1>Zawody polskich wędkarzy</h1> 
+        </section>
+        <section class="prawy">
+            <img src="zawody.jpg" alt="wędkowanie">
+        </section>
+    </section>
 
-            passwordField.addEventListener('', function () {
-                alert('${passwordField.value}');
-            });
-        }
-    </script>
+
+    <section class="glowny">
+        <h3>Łowiska</h3>
+        <ul>
+            <li>Zalew Węgrowski</li>
+            <li>Zbiornik Bukówka</li>
+            <li>Jeziorko Bartbetowskie</li>
+            <li>Warta-Obrzycko</li>
+        </ul>
+
+        <h3>Dodaj zawody wędkarskie</h3>
+        <form action="zgloszenie.php" method="post">
+            <label for="lowisko">Łowisko:</label>
+            <input type="number" id="lowisko" name="lowisko"><br>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data"><br>
+
+            <label for="sedzia">Sędzia:</label>
+            <input type="text" id="sedzia" name="sedzia"><br>
+
+            <button type="reset">CZYŚĆ</button>
+            <button type="submit">DODAJ</button>
+        </form>
+    </section>
+
+    <section class="stopka">
+        <section class="stopka_lewa">
+            <a href="kwerendy.txt">Pobierz</a>
+        </section>
+        <section class="stopka_prawa">
+            <p>Stronę przygotował: VIKA</p>
+        </section>
+    </section>
+
 </body>
-
 </html>
