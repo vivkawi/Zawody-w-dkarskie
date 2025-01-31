@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="circle2"></div>
+    <div class="circle1"></div>
+    <form class="custom-block">
+        <div>
+            <input type="name" placeholder="user">
+        </div>
+        <div>
+            <input type="password" id="password" placeholder="password" /><br><br>
+        </div>
+        <div>
+            <button>login</button>
+        </div>
+        <label for="password">1111:</label>
+        <input type="password" id="password" />
+    </form>
+    <script>
+        function showPassword() {
+            const passwordField = document.getElementById('password');
+
+            passwordField.addEventListener('', function () {
+                alert('${passwordField.value}');
+            });
+        }
+    </script>
+</body>
+
+</html>
